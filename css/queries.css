@@ -1,0 +1,74 @@
+@media (max-width: 75em) {
+  .main__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+  }
+
+  .forms__container {
+    grid-row-start: 1;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .directions__container,
+  .call__container {
+    grid-row-start: 2;
+  }
+
+  .directions__container {
+    grid-column-start: 1;
+    margin-left: 50rem;
+  }
+
+  .map__box {
+    height: 281px;
+  }
+
+  .call__container {
+    grid-column-start: 1;
+    align-items: flex-start;
+  }
+
+  .container__maps {
+    grid-row-start: 3;
+  }
+  .header {
+    display: none;
+  }
+}
+
+@media (max-width: 50em) {
+  .main__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+  }
+  .forms__container {
+    grid-row-start: 1;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .call__container {
+    grid-row-start: 2;
+    align-items: center;
+  }
+
+  .directions__container {
+    grid-row-start: 3;
+    margin-left: 0;
+  }
+
+  .container__maps {
+    grid-row-start: 4;
+  }
+
+  .input__name,
+  .input__email {
+    margin-right: 0;
+  }
+
+  .input__name {
+    margin-bottom: 1rem;
+  }
+}
